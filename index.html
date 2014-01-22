@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<title>Lag Log</title>
+<link rel="stylesheet" href="static/lib/rickshaw.min.css">
+<style>
+.container {
+    border-bottom: 1px solid #ccc;
+    clear: left;
+    margin: 40px;
+    padding: 20px;
+}
+.message-NORMAL {
+    background:#eaf4ef;
+    border-color:#99ccb2
+}
+.message-WARNING {
+    background:#fdf5ed;
+    border-color:#f8cea7
+}
+.message-CRITICAL {
+    background:#f9eae5;
+    border-color:#e5997f
+}
+.container .numbers {
+    float: left;
+    text-align: center;
+}
+.container .numbers h5 {
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 0px;
+}
+.container .numbers h3 {
+    margin-top: 0px;
+    font-size: 2.0em;
+}
+.container .chart {
+    width: 300px;
+    margin-left: 200px;
+}
+</style>
+</head>
+<body>
+
+
+<div id="all_containers"></div>
+
+
+<div id="chart_container">
+	<div id="chart"></div>
+	<div id="legend_container">
+		<div id="smoother" title="Smoothing"></div>
+		<!--<div id="legend"></div>-->
+	</div>
+	<!--<div id="slider"></div>-->
+</div>
+
+
+<!--<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
+<script src="static/lib/jquery-2.0.3.min.js"></script>
+<script src="static/lib/d3.v3.min.js"></script>
+<script src="static/lib/rickshaw.min.js"></script>
+<script src="static/lib/filesize.min.js"></script>
+<script src="static/index.js"></script>
+</body>
+</html>
